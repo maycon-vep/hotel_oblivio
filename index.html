@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hotel Oblívio — projeto acadêmico de portfólio.">
+  <title>Hotel Oblívio | Hospedagem</title>
+  <link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="topo">
+    <a class="brand" href="#inicio" aria-label="Hotel Oblívio, página inicial" data-i18n-aria="brandHome"><img src="assets/img/logo.jpg" alt="Logo do Hotel Oblívio" data-i18n-alt="logoAlt"><span>Hotel Oblívio</span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="sr-only" data-i18n="openMenu">Abrir menu</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal" data-i18n-aria="mainNavigation">
+      <a class="nav-link active" href="#inicio" data-i18n="home">Home</a><a class="nav-link" href="#acomodacoes" data-i18n="accommodations">Acomodações</a><a class="nav-link" href="#localizacao" data-i18n="location">Localização</a><a class="nav-link" href="#contato" data-i18n="contact">Contato</a>
+      <div class="language-picker">
+        <button class="language-toggle" id="language-toggle" type="button" aria-label="Alterar idioma" aria-haspopup="menu" aria-expanded="false"><span id="language-flag" aria-hidden="true">🇧🇷</span></button>
+        <div class="language-dropdown" id="language-dropdown" role="menu" aria-label="Selecionar idioma" hidden>
+          <button type="button" role="menuitem" data-lang="pt-BR"><span aria-hidden="true">🇧🇷</span><span>Português</span></button>
+          <button type="button" role="menuitem" data-lang="en"><span aria-hidden="true">🇺🇸</span><span>English</span></button>
+          <button type="button" role="menuitem" data-lang="es"><span aria-hidden="true">🇪🇸</span><span>Español</span></button>
+        </div>
+      </div>
+      <button class="nav-link nav-reserve" id="cart-toggle" type="button" aria-controls="reservation-cart" aria-expanded="false"><span data-i18n="reservations">Reservas</span> <span id="cart-count" aria-label="0 quartos">0</span></button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title"><div class="hero-content"><p class="eyebrow" data-i18n="heroEyebrow">Uma estadia memorável</p><h1 id="hero-title" data-i18n="heroTitle">Silêncio, conforto<br>e hospitalidade.</h1><p data-i18n="heroText">Um refúgio contemporâneo para desacelerar, descansar e reconhecer cada detalhe.</p><a class="primary-button" href="#acomodacoes" data-i18n="discoverRooms">Conhecer acomodações</a></div></section>
+    <section class="rooms-section" id="acomodacoes" aria-labelledby="rooms-title">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="stayWithUs">Hospede-se</p><h2 id="rooms-title" data-i18n="accommodations">Acomodações</h2></div><p data-i18n="roomsIntro">Espaços acolhedores, pensados para o seu melhor descanso.</p></div>
+      <div class="rooms-grid">
+        <article class="room-card" data-room-key="suiteHorizonte" data-room="Suíte Horizonte" data-price="780"><div class="room-photo"><img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Suíte Horizonte com cama ampla" data-i18n-alt="suiteHorizonteAlt"></div><div class="room-body"><div><h3 data-i18n="suiteHorizonte">Suíte Horizonte</h3><p><span data-i18n="sereneView">Vista serena</span> · <span data-i18n="twoGuests">2 hóspedes</span></p></div><p class="room-price"><strong>R$ 780</strong><span data-i18n="perNight">/ noite</span></p></div><form class="booking-form"><label><span data-i18n="checkin">Entrada</span><input type="date" name="checkin" required></label><label><span data-i18n="checkout">Saída</span><input type="date" name="checkout" required></label><button type="submit" class="add-button" data-i18n="addReservation">Adicionar à reserva</button></form></article>
+        <article class="room-card" data-room-key="patioRoom" data-room="Quarto Pátio" data-price="560"><div class="room-photo"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Quarto Pátio com decoração natural" data-i18n-alt="patioRoomAlt"></div><div class="room-body"><div><h3 data-i18n="patioRoom">Quarto Pátio</h3><p><span data-i18n="intimateRoom">Ambiente íntimo</span> · <span data-i18n="twoGuests">2 hóspedes</span></p></div><p class="room-price"><strong>R$ 560</strong><span data-i18n="perNight">/ noite</span></p></div><form class="booking-form"><label><span data-i18n="checkin">Entrada</span><input type="date" name="checkin" required></label><label><span data-i18n="checkout">Saída</span><input type="date" name="checkout" required></label><button type="submit" class="add-button" data-i18n="addReservation">Adicionar à reserva</button></form></article>
+        <article class="room-card" data-room-key="fogSuite" data-room="Suíte Neblina" data-price="920"><div class="room-photo"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Suíte Neblina elegante com cama ampla" data-i18n-alt="fogSuiteAlt"></div><div class="room-body"><div><h3 data-i18n="fogSuite">Suíte Neblina</h3><p><span data-i18n="premiumSuite">Suíte premium</span> · <span data-i18n="twoGuests">2 hóspedes</span></p></div><p class="room-price"><strong>R$ 920</strong><span data-i18n="perNight">/ noite</span></p></div><form class="booking-form"><label><span data-i18n="checkin">Entrada</span><input type="date" name="checkin" required></label><label><span data-i18n="checkout">Saída</span><input type="date" name="checkout" required></label><button type="submit" class="add-button" data-i18n="addReservation">Adicionar à reserva</button></form></article>
+      </div>
+    </section>
+    <section class="location-section" id="localizacao" aria-labelledby="location-title">
+      <div class="location-copy">
+        <p class="eyebrow" data-i18n="whereWeAre">Onde estamos</p>
+        <h2 id="location-title" data-i18n="location">Localização</h2>
+        <address>CCI SENIOR<br>Samambaia, Distrito Federal<br>Brasília — DF</address>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=CCI+Senior+Samambaia+Distrito+Federal" target="_blank" rel="noopener noreferrer" data-i18n="openMaps">Abrir no Google Maps</a>
+      </div>
+      <div class="map-card">
+        <iframe title="Mapa do CCI SENIOR em Samambaia" src="https://www.google.com/maps?q=CCI+Senior+Samambaia+Distrito+Federal&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="contact-section" id="contato" aria-labelledby="contact-title"><div><p class="eyebrow" data-i18n="contactUs">Fale conosco</p><h2 id="contact-title" data-i18n="planStay">Planeje sua estadia</h2></div><form class="contact-form" id="contact-form"><label><span data-i18n="nameLabel">Nome</span><input name="name" type="text" autocomplete="name" required></label><label><span data-i18n="emailLabel">E-mail</span><input name="email" type="email" autocomplete="email" required></label><label><span data-i18n="messageLabel">Mensagem</span><textarea name="message" rows="3" required></textarea></label><button class="primary-button" type="submit" data-i18n="sendMessage">Enviar mensagem</button><p id="contact-status" role="status" aria-live="polite"></p></form></section>
+  </main>
+  <aside class="reservation-cart" id="reservation-cart" aria-labelledby="cart-title" aria-hidden="true"><div class="cart-heading"><div><p class="eyebrow" data-i18n="yourStay">Sua estadia</p><h2 id="cart-title" data-i18n="reservations">Reservas</h2></div><button class="icon-button" id="cart-close" type="button" aria-label="Fechar carrinho" data-i18n-aria="closeCart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button></div><div class="cart-items" id="cart-items" aria-live="polite"><p class="empty-cart" data-i18n="emptyCart">Nenhum quarto selecionado.</p></div><div class="cart-footer"><div><span data-i18n="total">Total</span><strong id="cart-total">R$ 0</strong></div><button class="primary-button" id="checkout-button" type="button" disabled data-i18n="requestReservation">Solicitar reserva</button></div></aside><div class="cart-overlay" id="cart-overlay" hidden></div>
+  <footer class="site-footer"><img src="assets/img/logo.jpg" alt="Logo do Hotel Oblívio" data-i18n-alt="logoAlt"><p><strong>Hotel Oblívio</strong><br><span data-i18n="academicDisclaimer">Projeto acadêmico e hipotético — sem operação comercial real.</span></p><p class="copyright">© 2026 Hotel Oblívio</p></footer>
+  <div class="modal-backdrop checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" hidden>
+    <section class="checkout-dialog">
+      <div class="checkout-heading">
+        <div><p class="eyebrow" data-i18n="securePayment">Pagamento seguro</p><h2 id="checkout-title" data-i18n="finalizeReservation">Finalizar reserva</h2></div>
+        <button class="icon-button" id="checkout-close" type="button" aria-label="Fechar pagamento" data-i18n-aria="closePayment"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+      </div>
+      <div class="checkout-total"><span data-i18n="reservationTotal">Total da reserva</span><strong id="checkout-total">R$ 0</strong></div>
+      <div class="payment-options" role="group" aria-label="Forma de pagamento" data-i18n-aria="paymentMethod">
+        <button class="payment-method active" type="button" data-method="card" aria-pressed="true" data-i18n="creditCard">Cartão de crédito</button>
+        <button class="payment-method" type="button" data-method="pix" aria-pressed="false">Pix</button>
+        <button class="payment-method" type="button" data-method="boleto" aria-pressed="false" data-i18n="bankSlip">Boleto</button>
+      </div>
+      <form class="checkout-form" id="checkout-form" novalidate>
+        <div class="payment-panel" id="card-panel">
+          <div class="checkout-field-grid">
+            <label><span data-i18n="nameOnCard">Nome impresso no cartão</span><input name="cardName" autocomplete="cc-name" placeholder="Nome completo" data-i18n-placeholder="fullName" required></label>
+            <label><span data-i18n="holderCpf">CPF do titular</span><input name="holderCpf" inputmode="numeric" autocomplete="off" placeholder="000.000.000-00" required></label>
+            <label class="checkout-field-wide"><span data-i18n="cardNumber">Número do cartão</span><input name="cardNumber" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000" minlength="15" maxlength="19" required></label>
+            <label><span data-i18n="expiry">Validade</span><input name="cardExpiry" autocomplete="cc-exp" placeholder="MM/AA" maxlength="5" required></label>
+            <label>CVV<input name="cardCvv" type="password" inputmode="numeric" autocomplete="cc-csc" placeholder="000" minlength="3" maxlength="4" required></label>
+            <label class="checkout-field-wide"><span data-i18n="installments">Parcelamento</span><select name="installments" required><option value="1" data-i18n="installment1">1x sem juros</option><option value="2" data-i18n="installment2">2x sem juros</option><option value="3" data-i18n="installment3">3x sem juros</option><option value="6" data-i18n="installment6">6x sem juros</option><option value="12" data-i18n="installment12">12x sem juros</option></select></label>
+          </div>
+        </div>
+        <div class="payment-panel" id="pix-panel" hidden>
+          <p data-i18n="pixInstructions">Finalize copiando a chave Pix abaixo e registre o pagamento na confirmação.</p>
+          <div class="pix-key-row"><input id="pix-key" value="reservas@hoteloblivio.com.br" readonly aria-label="Chave Pix" data-i18n-aria="pixKey"><button id="copy-pix-key" type="button" data-i18n="copyKey">Copiar chave</button></div>
+          <p class="payment-status" id="pix-copy-status" role="status"></p>
+        </div>
+        <div class="payment-panel" id="boleto-panel" hidden>
+          <p data-i18n="boletoInstructions">Informe seus dados para gerar o boleto bancário demonstrativo.</p>
+          <div class="checkout-field-grid">
+            <label><span data-i18n="fullName">Nome completo</span><input name="boletoName" autocomplete="name" placeholder="Seu nome completo" data-i18n-placeholder="yourFullName"></label>
+            <label>CPF<input name="boletoCpf" inputmode="numeric" placeholder="000.000.000-00"></label>
+            <label class="checkout-field-wide"><span data-i18n="emailLabel">E-mail</span><input name="boletoEmail" type="email" autocomplete="email" placeholder="voce@exemplo.com"></label>
+          </div>
+          <div class="boleto-code" id="boleto-code" hidden><span data-i18n="demoBarcode">Código de barras demonstrativo</span><strong></strong><button id="copy-boleto-code" type="button" data-i18n="copyCode">Copiar código</button></div>
+        </div>
+        <p class="payment-status" id="checkout-error" role="alert"></p>
+        <button class="primary-button checkout-confirm-button" type="submit" data-i18n="confirmReservation">Confirmar reserva</button>
+        <p class="demo-disclaimer" data-i18n="demoDisclaimer">Ambiente acadêmico demonstrativo. Nenhum dado financeiro é enviado e nenhuma cobrança é realizada.</p>
+      </form>
+    </section>
+  </div>
+  <div class="modal-backdrop language-modal" id="language-modal" role="dialog" aria-modal="true" aria-labelledby="language-title"><section class="language-dialog"><img src="assets/img/logo.jpg" alt="Logo do Hotel Oblívio" data-i18n-alt="logoAlt"><p class="eyebrow">Hotel Oblívio</p><h2 id="language-title" data-i18n="chooseLanguage">Escolha sua linguagem de preferência</h2><div class="language-options"><button type="button" data-lang="pt-BR">🇧🇷 Português (Brasil)</button><button type="button" data-lang="en">🇺🇸 English</button><button type="button" data-lang="es">🇪🇸 Español</button></div></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <!--
+  CONFORMIDADES: W3C — semântica, labels, navegação por teclado, foco visível, landmarks e atributos ARIA.
+  HEURÍSTICAS — feedback visual, estados claros, prevenção de datas inválidas, confirmação de ações e controle de saída.
+  -->
+</body>
+</html>

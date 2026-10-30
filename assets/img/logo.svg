@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Hotel Oblívio</title>
+  <desc id="desc">Monograma floral O com tonalidades verde e dourada</desc>
+  <rect width="512" height="512" rx="256" fill="#f7f4ec"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#d0b57b" stroke-width="10"/>
+  <path d="M354 310c-25 57-77 93-139 93-88 0-159-71-159-159S127 85 215 85c50 0 96 23 126 59" fill="none" stroke="#405744" stroke-width="26" stroke-linecap="round"/>
+  <path d="M215 111c-57 0-103 60-103 133s46 133 103 133" fill="none" stroke="#405744" stroke-width="26" stroke-linecap="round"/>
+  <path d="M215 111c37 0 70 16 93 42" fill="none" stroke="#405744" stroke-width="26" stroke-linecap="round"/>
+  <path d="M158 294c33-28 65-42 96-42 43 0 70 31 112 31-18 60-60 97-106 97-53 0-88-31-102-86Z" fill="#91a18d" opacity=".38"/>
+  <path d="M205 151c9-46 34-76 75-91-2 48-21 82-75 91Z" fill="#405744"/>
+  <path d="M188 166c-31-36-38-74-21-114 29 33 34 72 21 114Z" fill="#c6a66a"/>
+  <path d="M176 173c-50-22-79-51-86-88 48 8 78 38 86 88Z" fill="#405744" opacity=".88"/>
+  <path d="M148 312c-47-16-69-42-67-78 40 17 62 43 67 78Zm31 45c-42-2-75-15-98-40 45-12 78 1 98 40Z" fill="#c6a66a"/>
+  <path d="M187 177c9 68 3 130-18 186" fill="none" stroke="#405744" stroke-width="12" stroke-linecap="round"/>
+  <path d="M188 224c28-24 56-33 85-27M176 272c38-19 76-20 113-2M169 310c41-13 79-8 114 15" fill="none" stroke="#f7f4ec" stroke-width="10" stroke-linecap="round"/>
+</svg>
