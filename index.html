@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hotel Oblívio — hospitalidade contemporânea, conforto e experiências memoráveis.">
+  <meta name="theme-color" content="#173b36">
+  <title>Hotel Oblívio | Hospedagem sofisticada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="topo">
+    <a class="brand" href="#inicio" aria-label="Hotel Oblívio, página inicial">
+      <img class="brand-logo" src="assets/img/logo.jpg" alt="Hotel Oblívio" width="960" height="720">
+    </a>
+    <div class="language-switcher" aria-label="Selecionar idioma" data-no-translate>
+      <button type="button" class="language-button active" data-language="pt-BR" aria-label="Português do Brasil" aria-pressed="true">PT</button>
+      <button type="button" class="language-button" data-language="es" aria-label="Español" aria-pressed="false">ES</button>
+      <button type="button" class="language-button" data-language="en" aria-label="English" aria-pressed="false">EN</button>
+      <span id="language-status" class="language-status" role="status" aria-live="polite"></span>
+    </div>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="#acomodacoes">Acomodações</a>
+      <a href="#experiencias">Experiências</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
+      <a class="nav-cta" href="#reserva"><span>Reservar Agora</span><span class="reservation-badge" id="reservation-badge" aria-label="Reservas pendentes" hidden>0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">Bem-vindo ao Oblívio</p>
+        <h1 id="hero-title">O luxo de viver <em>sem pressa.</em></h1>
+        <p>Um refúgio contemporâneo entre natureza, conforto e hospitalidade genuína.</p>
+      </div>
+
+      <form class="availability-widget" id="availability-form" aria-label="Consultar disponibilidade">
+        <label><span>Entrada</span><input id="checkin" type="date" name="checkin" required></label>
+        <label><span>Saída</span><input id="checkout" type="date" name="checkout" required></label>
+        <label><span>Hóspedes</span>
+          <select name="guests" aria-label="Número de hóspedes">
+            <option value="1">1 hóspede</option><option value="2" selected>2 hóspedes</option><option value="3">3 hóspedes</option><option value="4">4 hóspedes</option>
+          </select>
+        </label>
+        <button type="submit">Ver disponibilidade <span aria-hidden="true">→</span></button>
+        <p class="widget-notice">Consulta sujeita à confirmação. Seus dados são usados para atendimento hoteleiro.</p>
+      </form>
+    </section>
+
+    <section class="benefits" aria-label="Diferenciais">
+      <article><span class="benefit-icon" aria-hidden="true">◉</span><div><h2>Atendimento multilíngue</h2><p>Recepção acolhedora em português, inglês e espanhol.</p></div></article>
+      <article><span class="benefit-icon" aria-hidden="true">⌖</span><div><h2>Localização privilegiada</h2><p>Próximo aos principais atrativos de Brasília.</p></div></article>
+      <article><span class="benefit-icon" aria-hidden="true">≋</span><div><h2>Wi-Fi de alta velocidade</h2><p>Conectividade confiável em todos os espaços.</p></div></article>
+      <article><span class="benefit-icon" aria-hidden="true">♨</span><div><h2>Café da manhã artesanal</h2><p>Sabores frescos preparados diariamente.</p></div></article>
+    </section>
+
+    <section class="rooms-section section-shell" id="acomodacoes" aria-labelledby="rooms-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Hospede-se</p><h2 id="rooms-title">Acomodações</h2></div>
+        <p>Ambientes serenos, materiais naturais e cada detalhe pensado para o seu descanso.</p>
+      </div>
+      <div class="rooms-grid">
+        <article class="room-card" data-room="Suíte Horizonte" data-price="780">
+          <div class="room-photo"><img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Suíte Horizonte com cama ampla"></div>
+          <div class="room-body"><div><p class="room-type">Suíte</p><h3>Suíte Horizonte</h3><p>2 hóspedes · Cama queen · Vista serena</p></div><p class="room-price"><strong>R$ 780</strong><span>por noite</span></p></div>
+          <button class="room-button" type="button">Reservar</button>
+        </article>
+        <article class="room-card" data-room="Quarto Pátio" data-price="560">
+          <div class="room-photo"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Quarto Pátio com decoração natural"></div>
+          <div class="room-body"><div><p class="room-type">Quarto</p><h3>Quarto Pátio</h3><p>2 hóspedes · Cama queen · Banheira</p></div><p class="room-price"><strong>R$ 560</strong><span>por noite</span></p></div>
+          <button class="room-button" type="button">Reservar</button>
+        </article>
+        <article class="room-card" data-room="Suíte Neblina" data-price="920">
+          <div class="room-photo"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Suíte Neblina elegante com cama ampla"></div>
+          <div class="room-body"><div><p class="room-type">Suíte premium</p><h3>Suíte Neblina</h3><p>3 hóspedes · Cama king · Terraço privativo</p></div><p class="room-price"><strong>R$ 920</strong><span>por noite</span></p></div>
+          <button class="room-button" type="button">Reservar</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience" id="experiencias" aria-labelledby="experience-title">
+      <div class="experience-image" role="img" aria-label="Lounge acolhedor do Hotel Oblívio"></div>
+      <div class="experience-copy">
+        <p class="eyebrow light">Mais que hospedagem</p>
+        <h2 id="experience-title">Calma, segurança e atenção aos detalhes.</h2>
+        <p>Do café da manhã até o descanso da noite, cada momento é conduzido com discrição, cuidado e hospitalidade humana.</p>
+        <ul>
+          <li><span>01</span> Conforto pensado para desacelerar</li>
+          <li><span>02</span> Privacidade e segurança da informação</li>
+          <li><span>03</span> Experiências locais autênticas</li>
+        </ul>
+        <p class="privacy-copy"><strong>Proteção de dados:</strong> informações como nome, e-mail, telefone e dados de pagamento são utilizadas estritamente para processar reservas e prestação de atendimento hoteleiro.</p>
+      </div>
+    </section>
+
+    <section class="location-section section-shell" id="localizacao" aria-labelledby="location-title">
+      <div class="location-copy"><p class="eyebrow">Onde estamos</p><h2 id="location-title">No coração de Brasília</h2><address>CCI Sênior, Samambaia<br>Distrito Federal — Brasília, DF</address><a href="https://www.google.com/maps/search/?api=1&amp;query=CCI+Senior+Samambaia+Distrito+Federal" target="_blank" rel="noopener">Ver rota no Google Maps <span aria-hidden="true">↗</span></a></div>
+      <div class="map-card"><iframe title="Mapa do CCI Sênior em Samambaia" src="https://www.google.com/maps?q=CCI+Senior+Samambaia+Distrito+Federal&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+
+    <section class="faq-section section-shell" aria-labelledby="faq-title">
+      <div class="section-heading"><div><p class="eyebrow">Informações úteis</p><h2 id="faq-title">Perguntas frequentes</h2></div></div>
+      <div class="faq-list">
+        <article class="faq-item"><button type="button" aria-expanded="false"><span>Qual é o horário de check-in e check-out?</span><i aria-hidden="true">+</i></button><div class="faq-answer"><p>Check-in a partir das 15h e check-out até as 12h. Solicitações antecipadas podem ser confirmadas conforme disponibilidade.</p></div></article>
+        <article class="faq-item"><button type="button" aria-expanded="false"><span>Como funciona o cancelamento?</span><i aria-hidden="true">+</i></button><div class="faq-answer"><p>Cancelamentos gratuitos podem ser realizados até 48 horas antes da entrada. Consulte as condições da tarifa escolhida no momento da reserva.</p></div></article>
+        <article class="faq-item"><button type="button" aria-expanded="false"><span>Animais de estimação são permitidos?</span><i aria-hidden="true">+</i></button><div class="faq-answer"><p>Quartos selecionados recebem pets mediante consulta prévia, taxa adicional e apresentação das regras de convivência.</p></div></article>
+        <article class="faq-item"><button type="button" aria-expanded="false"><span>Como meus dados pessoais são protegidos?</span><i aria-hidden="true">+</i></button><div class="faq-answer"><p>Adotamos medidas administrativas e técnicas para proteger os dados coletados. O tratamento ocorre conforme os princípios da LGPD e apenas para a finalidade informada.</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell" id="contato" aria-labelledby="contact-title">
+      <div class="contact-copy"><p class="eyebrow">Fale conosco</p><h2 id="contact-title">Planeje sua estadia</h2><p>Nossa equipe terá prazer em ajudar você a escolher a melhor experiência.</p></div>
+      <form class="contact-form" id="contact-form">
+        <label>Nome completo<input name="name" autocomplete="name" required></label>
+        <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+        <label>Telefone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="15" placeholder="(61) 99999-9999" pattern="[\d\s()+-]{10,15}" required></label>
+        <label class="full-field">Mensagem<textarea name="message" rows="4" required></textarea></label>
+        <label class="consent full-field"><input type="checkbox" name="consent" required><span>Li e aceito os <a href="#termos" class="policy-link" data-open-policy>Termos de Uso</a> e a <a href="#privacidade" class="policy-link" data-open-policy>Política de Privacidade</a>.</span></label>
+        <p class="transparency full-field">Os dados coletados serão utilizados exclusivamente para a finalidade de contato e atendimento hoteleiro, em conformidade com a LGPD.</p>
+        <button class="primary-button full-field" type="submit">Enviar mensagem</button>
+        <p class="form-status full-field" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="booking-section" id="reserva" aria-labelledby="booking-title">
+      <div><p class="eyebrow light">Reserva direta</p><h2 id="booking-title">Sua próxima estadia começa aqui.</h2></div>
+      <button class="light-button" type="button" data-open-reservation>Reservar agora</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <a class="brand brand-footer" href="#topo">
+        <img class="brand-logo" src="assets/img/logo.jpg" alt="Hotel Oblívio" width="960" height="720">
+      </a>
+      <p>Hospitalidade com propósito e conforto com elegância.</p>
+    </div>
+    <div><h2>Contato</h2><p>reservas@hoteloblivio.com.br</p><p>+55 (61) 3333-0000</p><p>Samambaia, Brasília — DF</p></div>
+    <div><h2>Links</h2><a href="#acomodacoes">Acomodações</a><a href="#experiencias">Experiências</a><a href="#localizacao">Localização</a><a href="#contato">Contato</a></div>
+    <div class="legal"><h2>Privacidade</h2><a href="#termos" class="policy-link" id="termos">Termos de Uso</a><a href="#privacidade" class="policy-link" id="privacidade">Política de Privacidade</a><p>Dados coletados exclusivamente para reservas, atendimento e suporte.</p></div>
+    <div class="footer-bottom"><p>© 2026 Hotel Oblívio. Todos os direitos reservados.</p><p>Seus dados estão seguros conosco em conformidade com a LGPD.</p></div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Aviso de cookies e proteção de dados">
+    <p><strong>Privacidade e cookies</strong><br>Usamos cookies para melhorar sua experiência. Consulte os <button class="policy-text-link" type="button" data-open-policy>Termos de Uso e a Política de Privacidade</button>.</p>
+    <div class="cookie-actions">
+      <button class="cookie-reject" type="button" id="reject-cookies">Recusar</button>
+      <button class="cookie-accept" type="button" id="accept-cookies">Aceitar</button>
+    </div>
+  </div>
+
+  <dialog class="policy-dialog" id="policy-dialog" aria-labelledby="policy-title">
+    <article class="policy-modal">
+      <div class="policy-heading">
+        <div><p class="eyebrow">Informação legal</p><h2 id="policy-title">Termos de Uso e Política de Privacidade</h2></div>
+        <button class="policy-close" type="button" aria-label="Fechar termos">×</button>
+      </div>
+      <div class="policy-content">
+        <h3>Uso do site</h3>
+        <p>Este website oferece informações sobre o Hotel Oblívio e permite solicitar reservas ou contato. Ao utilizá-lo, o usuário declara fornecer informações verdadeiras e utilizar os serviços de forma lícita.</p>
+        <h3>Dados pessoais e LGPD</h3>
+        <p>Nome, e-mail, telefone, datas da estadia e dados de pagamento são coletados exclusivamente para processamento da reserva, contato hoteleiro, atendimento e prestação dos serviços solicitados.</p>
+        <h3>Cookies</h3>
+        <p>Cookies essenciais podem ser utilizados para lembrar preferências e registrar o consentimento deste aviso. O usuário pode aceitar ou recusar o uso de cookies por meio do banner.</p>
+        <h3>Direitos do titular</h3>
+        <p>Nos termos da LGPD, o titular pode solicitar acesso, correção, atualização, anonimização ou exclusão dos dados pessoais, conforme a natureza de cada informação, pelos canais de contato disponíveis neste site.</p>
+      </div>
+      <button class="primary-button policy-understood" type="button">Entendido</button>
+    </article>
+  </dialog>
+
+  <dialog class="reservation-dialog" id="reservation-dialog" aria-labelledby="reservation-title">
+    <form class="reservation-modal" id="reservation-modal">
+      <div class="modal-heading">
+        <div><p class="eyebrow">Reserva direta</p><h2 id="reservation-title">Finalizar reserva</h2></div>
+        <button class="modal-close" type="button" aria-label="Fechar reserva">×</button>
+      </div>
+      <section class="selection-view" id="selection-view" hidden>
+        <h3>Escolha sua estadia</h3>
+        <p class="selection-room">Acomodação selecionada</p>
+        <div class="form-grid">
+          <label>Entrada<input id="selection-checkin" name="selectionCheckin" type="date" required></label>
+          <label>Saída<input id="selection-checkout" name="selectionCheckout" type="date" required></label>
+        </div>
+        <label>Quantidade de hóspedes
+          <select id="selection-guests" name="selectionGuests">
+            <option value="1">1 hóspede</option>
+            <option value="2" selected>2 hóspedes</option>
+            <option value="3">3 hóspedes</option>
+            <option value="4">4 hóspedes</option>
+          </select>
+        </label>
+        <p class="selection-status" role="status" aria-live="polite"></p>
+        <button class="primary-button selection-confirm" type="button">Adicionar à reserva</button>
+      </section>
+      <section class="pending-view" id="pending-view">
+        <h3>Reserva aguardando</h3>
+        <p class="pending-empty">Nenhuma reserva selecionada.</p>
+        <div class="pending-list" id="pending-list"></div>
+        <button class="primary-button modal-submit go-payment" type="button" disabled>Ir ao pagamento</button>
+      </section>
+      <section class="payment-view" id="payment-view" hidden>
+      <p class="payment-room-selection" id="payment-room-selection" role="status" aria-live="polite"></p>
+      <div class="form-grid">
+        <label>Entrada<input name="checkin" type="date" required></label>
+        <label>Saída<input name="checkout" type="date" required></label>
+      </div>
+      <div class="form-grid">
+        <label>Nome completo<input name="name" autocomplete="name" maxlength="80" required></label>
+        <label>Telefone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="15" placeholder="(61) 99999-9999" required></label>
+      </div>
+      <fieldset class="payment-methods">
+        <legend>Forma de pagamento</legend>
+        <label><input type="radio" name="paymentMethod" value="pix" checked> Pix</label>
+        <label><input type="radio" name="paymentMethod" value="card"> Cartão</label>
+        <label><input type="radio" name="paymentMethod" value="boleto"> Boleto</label>
+      </fieldset>
+      <div class="reservation-card-fields" hidden>
+        <div class="form-grid">
+          <label>Nome impresso no cartão<input name="cardName" autocomplete="cc-name" maxlength="80" pattern="[A-Za-zÀ-ÿ ]{2,80}" placeholder="NOME COMO NO CARTÃO"></label>
+          <label>Número do cartão<input name="cardNumber" autocomplete="cc-number" inputmode="numeric" maxlength="23" placeholder="0000 0000 0000 0000"></label>
+        </div>
+        <div class="form-grid">
+          <label>Validade<input name="cardExpiry" autocomplete="cc-exp" inputmode="numeric" maxlength="5" placeholder="MM/AA"></label>
+          <label>CVV<input name="cardCvv" autocomplete="cc-csc" inputmode="numeric" maxlength="4" placeholder="3 ou 4 dígitos"></label>
+        </div>
+      </div>
+      <div class="reservation-total"><span>Total da reserva</span><strong id="reservation-total">R$ 0,00</strong></div>
+      <button class="secondary-button back-to-reservation" type="button">Voltar às reservas</button>
+      <button class="primary-button modal-submit" type="submit">Pagar e confirmar reserva</button>
+      <p class="reservation-status" role="status" aria-live="polite"></p>
+      </section>
+      <section class="success-view" id="success-view" hidden>
+        <div class="success-icon" aria-hidden="true">✓</div>
+        <h3>Pagamento realizado com sucesso</h3>
+        <p class="success-message"></p>
+        <button class="primary-button success-close" type="button">Concluir</button>
+      </section>
+    </form>
+  </dialog>
+</body>
+</html>
