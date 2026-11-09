@@ -4,7 +4,7 @@ Site institucional para o Hotel Oblívio, criado para apresentar as acomodaçõe
 
 ## Link de hospedagem
 
-**Bote o link de hospedagem aqui que já já eu altero**
+**(https://maycon-vep.github.io/hotel_oblivio/#acomodacoes)**
 
 ## Sobre o site
 
